@@ -1,0 +1,3 @@
+git+https://github.com/open-data/notifications-python-client#egg=notifications-python-client
+invoke
+contextlib
