@@ -1,6 +1,8 @@
-# gcnotify-templates
+[![Sync GC Notify Templates](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml/badge.svg?branch=main&event=schedule)](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml)
 
-Python scripts to pull and version controll GC Notfiy template objects
+# GC Notify Templates
+
+Python script to pull and version controll GC Notfiy template objects
 
 ## Requirements
 
@@ -13,6 +15,7 @@ Python scripts to pull and version controll GC Notfiy template objects
 1. Create a python virtual environment: `python3 -m venv ./venv`
 1. Activate the venv: `. venv/bin/activate`
 1. Install the requirements into the venv: `pip install -r requirements.txt`
+1. Run the python script: `python3 notify.py`
 
 ## GitHub Actions
 
