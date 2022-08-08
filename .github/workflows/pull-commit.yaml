@@ -1,9 +1,11 @@
-name: Pull and Commit GC Notify Templates
+name: Sync GC Notify Templates
 
-on: [workflow_dispatch]
+on:
+  schedule:
+    - cron: "00 00,12 * * *"
 
 jobs:
-  build-pull-and-commit:
+  build-python3-environment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,16 +22,57 @@ jobs:
       - run: pip install -r requirements.txt
         if: steps.cache-virtualenv.outputs.cache-hit != 'true'
 
+  pull-templates:
+    needs: build-python3-environment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: syphar/restore-virtualenv@v1
+        id: cache-virtualenv
+
       - name: Get all GC Notify templates
         run: python3 notify.py --key=${{ secrets.API_KEY }} --pull
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: json-dump
+          path: ./dump.json
+
+  write-templates:
+    needs: pull-templates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: syphar/restore-virtualenv@v1
+        id: cache-virtualenv
+      - uses: actions/download-artifact@v3
+        with:
+          name: json-dump
 
       - name: Parse template json file into yaml files
         run: python3 notify.py --commit
 
-      - uses: EndBug/add-and-commit@v9
+      - uses: actions/upload-artifact@v3
         with:
-          default_author: github_actions
-          message: Show GitHub Actions logo
-          committer_name: GitHub Actions
-          committer_email: actions@github.com
-          add: '*'
+          name: template-yamls
+          path: ./templates/*
+
+  commit-to-repo:
+    needs: write-templates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: json-dump
+      - uses: actions/download-artifact@v3
+        with:
+          name: template-yamls
+      - uses: EndBug/add-and-commit@v9
+          with:
+            default_author: github_actions
+            message: Synced GC Notify Templates
+            committer_name: GitHub Actions
+            committer_email: actions@github.com
+            add: '*'

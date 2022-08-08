@@ -13,3 +13,9 @@ Python scripts to pull and version controll GC Notfiy template objects
 1. Create a python virtual environment: `python3 -m venv ./venv`
 1. Activate the venv: `. venv/bin/activate`
 1. Install the requirements into the venv: `pip install -r requirements.txt`
+
+## GitHub Actions
+
+The action is run at midnight and noon. It will build the python3 environment, and run the notify.py script.
+
+This will fetch the templates from the GC Notify API and parse them into yaml files. It will commit any template changes, including deletions.
