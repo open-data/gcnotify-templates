@@ -3,7 +3,7 @@ name: Sync GC Notify Templates
 on:
   schedule:
     - cron: "00 00,12 * * *"
-  [workflow_dispatch]
+  workflow_dispatch:
 
 jobs:
   build-python3-environment:
