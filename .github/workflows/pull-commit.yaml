@@ -33,7 +33,7 @@ jobs:
         run: python3 notify.py --key=${{ secrets.API_KEY }} --pull
 
   write-templates:
-    needs: create-virtualenv
+    needs: pull-templates
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -45,6 +45,7 @@ jobs:
         run: python3 notify.py --commit
 
   commit-to-repo:
+    needs: write-templates
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
