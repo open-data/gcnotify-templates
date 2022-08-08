@@ -64,6 +64,9 @@ jobs:
       - name: Parse template json file into yaml files
         run: python3 notify.py --commit
 
+      - name: List templates directory
+        run: ls -1 ./templates
+
       - uses: actions/upload-artifact@v3
         with:
           name: template-yamls
@@ -87,7 +90,7 @@ jobs:
           path: ./templates/
 
       - name: List templates directory
-        run: ls -l ./templates
+        run: ls -1 ./templates
 
       - uses: EndBug/add-and-commit@v9
         with:
