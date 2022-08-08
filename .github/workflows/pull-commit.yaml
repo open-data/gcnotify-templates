@@ -1,0 +1,56 @@
+name: Pull and Commit GC Notify Templates
+
+on: [workflow_dispatch]
+
+jobs:
+  create-virtualenv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+
+      - uses: syphar/restore-virtualenv@v1
+        id: cache-virtualenv
+        with:
+          requirement_files: requirements.txt
+
+      - uses: syphar/restore-pip-download-cache@v1
+        if: steps.cache-virtualenv.outputs.cache-hit != 'true'
+
+      - run: pip install -r requirements.txt
+        if: steps.cache-virtualenv.outputs.cache-hit != 'true'
+
+  pull-templates:
+    needs: create-virtualenv
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: syphar/restore-virtualenv@v1
+        id: cache-virtualenv
+
+      - name: Get all GC Notify templates
+        run: python3 notify.py --key=${{ secrets.API_KEY }} --pull
+
+  write-templates:
+    needs: create-virtualenv
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: syphar/restore-virtualenv@v1
+        id: cache-virtualenv
+
+      - name: Parse template json file into yaml files
+        run: python3 notify.py --commit
+
+  commit-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: Show GitHub Actions logo
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
+          add: '*'
