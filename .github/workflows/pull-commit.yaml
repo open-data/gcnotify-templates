@@ -3,17 +3,11 @@ name: Pull and Commit GC Notify Templates
 on: [workflow_dispatch]
 
 jobs:
-  build:
+  build-pull-and-commit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - uses: EndBug/add-and-commit@v9
-        with:
-          message: Show GitHub Actions logo
-          committer_name: GitHub Actions
-          committer_email: actions@github.com
-          add: '*'
 
       - uses: syphar/restore-virtualenv@v1
         id: cache-virtualenv
@@ -31,3 +25,11 @@ jobs:
 
       - name: Parse template json file into yaml files
         run: python3 notify.py --commit
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: Show GitHub Actions logo
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
+          add: '*'
