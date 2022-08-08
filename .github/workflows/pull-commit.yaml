@@ -75,6 +75,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Remove old templates directory
+        run: rm -rf ./templates
+
       - uses: actions/download-artifact@v3
         with:
           name: json-dump
