@@ -45,20 +45,17 @@ class GCNotifySorceController(object):
         with open('./dump.json', mode='r') as file: # read templates json dump file
             print('Reading json dump file')
             templates = json.loads(file.read()) # load the object from string
-            if not os.path.isdir('./templates'): # create templates directory if it does not exist
-                print('Creating templates directory')
-                os.mkdir('./templates')
-            if not templates['templates']: return # exit if dump object does not have templates
-            templates_to_keep = []
-            for template in templates['templates']:
-                templates_to_keep.append(template['id'])
-                with open('./templates/{}.yaml'.format(template['id']), mode='w') as file: # write template data to its yaml file
-                    print('Writing yaml file templates/{}.yaml'.format(template['id']))
-                    yaml.dump(template, file, default_flow_style=False)
-            for filename in os.listdir('./templates'): # delete non-existent templates
-                if os.path.splitext(filename)[0] not in templates_to_keep:
-                    print('Deleting yaml file templates/{}'.format(filename))
-                    os.remove('./templates/{}'.format(filename))
+        if not os.path.isdir('./templates'): # create templates directory if it does not exist
+            print('Creating templates directory')
+            os.mkdir('./templates')
+        if not templates['templates']: return # exit if dump object does not have templates
+        print('Deleting template yaml files')
+        for filename in os.listdir('./templates'): # delete all templates
+            os.remove('./templates/{}'.format(filename))
+        for template in templates['templates']:
+            with open('./templates/{}.yaml'.format(template['name']), mode='w') as file: # write template data to its yaml file
+                print('Writing yaml file templates/{}.yaml'.format(template['name']))
+                yaml.dump(template, file, default_flow_style=False)
 
 
 source_controller = GCNotifySorceController()
