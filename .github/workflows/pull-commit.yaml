@@ -58,12 +58,13 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: template-yamls
-          path: ./templates/*
+          path: ./templates/
 
   commit-to-repo:
     needs: write-templates
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: actions/download-artifact@v3
         with:
           name: json-dump
