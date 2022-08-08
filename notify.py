@@ -2,7 +2,7 @@ import os, sys, argparse, json, yaml
 from notifications_python_client.notifications import NotificationsAPIClient
 
 
-class GCNotifySorceController(object):
+class GCNotifySourceController(object):
 
     api_key: str
 
@@ -58,4 +58,4 @@ class GCNotifySorceController(object):
                 yaml.dump(template, file, default_flow_style=False)
 
 
-source_controller = GCNotifySorceController()
+source_controller = GCNotifySourceController()
