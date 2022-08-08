@@ -1,0 +1,11 @@
+body: This is a test email for version controlling templates in GC Notify
+created_at: '2022-08-05T14:39:24.968594Z'
+created_by: jesse.vickery@tbs-sct.gc.ca
+id: 7917d707-8fc1-4e38-a983-a62ef30b6948
+name: Version Control Test
+personalisation: {}
+postage: null
+subject: Version Control Test
+type: email
+updated_at: null
+version: 1
