@@ -71,6 +71,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: template-yamls
+          path: ./templates/
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
