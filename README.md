@@ -1,7 +1,7 @@
 | Action | Status |
 |---|---|
-| CRON Schedule | [![Sync GC Notify Templates](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml/badge.svg?branch=main&event=schedule)](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml) |
-| Manual Dispatch | [![Sync GC Notify Templates](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml)|
+| CRON Schedule | [![Sync GC Notify Templates](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml/badge.svg?branch=main&event=schedule)](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml?query=event%3Aschedule) |
+| Manual Dispatch | [![Sync GC Notify Templates](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/open-data/gcnotify-templates/actions/workflows/pull-commit.yaml?query=event%3Aworkflow_dispatch)|
 
 # GC Notify Templates
 
