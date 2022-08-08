@@ -58,6 +58,7 @@ class GCNotifySorceController(object):
             for filename in os.listdir('./templates'): # delete non-existent templates
                 if os.path.splitext(filename)[0] not in templates_to_keep:
                     print('Deleting yaml file templates/{}'.format(filename))
+                    os.remove('./templates/{}'.format(filename))
 
 
 source_controller = GCNotifySorceController()
