@@ -55,7 +55,8 @@ class GCNotifySourceController(object):
         for template in templates['templates']:
             with open('./templates/{}.yaml'.format(template['name']), mode='w') as file: # write template data to its yaml file
                 print('Writing yaml file templates/{}.yaml'.format(template['name']))
-                yaml.dump(template, file, default_flow_style=False)
+                template['body'] = '\n' + template['body'].replace('\r\n','\n') + '\n'
+                yaml.dump(template, file, default_flow_style=False, default_style='', allow_unicode=True)
 
 
 source_controller = GCNotifySourceController()
