@@ -1,14 +1,46 @@
-body: "# GC Notify Demo Message with File #\r\n\r\nHello ((name)),\r\n\r\nthis message\
-  \ was sent by means of the [GC Notify system](https://notification.canada.ca/) operated\
-  \ by TBS. It is being sent as part of a demonstration of GC Notify capabilities.\
-  \ You may safely disregard and delete this message.\r\n\r\n[Download document](((file_link)))\r\
-  \n\r\nThank you,\r\nOpen Government Development Team\r\n\r\n----\r\n\r\n# Message\
-  \ de d\xE9monstration de la notification GC avec un fichier #\r\n\r\nBonjour ((name)),\r\
-  \n\r\nCe message a \xE9t\xE9 envoy\xE9 au moyen du [syst\xE8me GC Notification](https://notification.canada.ca/)\
-  \ exploit\xE9 par le SCT. Il est envoy\xE9 dans le cadre d'une d\xE9monstration\
-  \ des capacit\xE9s du GC Notification. Vous pouvez supprimer ce message.\r\n\r\n\
-  [T\xE9l\xE9charger le fichier](((file_link)))\r\n\r\nMerci,\r\n\xC9quipe de d\xE9\
-  veloppement du gouvernement ouvert"
+body: '
+
+  # GC Notify Demo Message with File #
+
+
+  Hello ((name)),
+
+
+  this message was sent by means of the [GC Notify system](https://notification.canada.ca/)
+  operated by TBS. It is being sent as part of a demonstration of GC Notify capabilities.
+  You may safely disregard and delete this message.
+
+
+  [Download document](((file_link)))
+
+
+  Thank you,
+
+  Open Government Development Team
+
+
+  ----
+
+
+  # Message de démonstration de la notification GC avec un fichier #
+
+
+  Bonjour ((name)),
+
+
+  Ce message a été envoyé au moyen du [système GC Notification](https://notification.canada.ca/)
+  exploité par le SCT. Il est envoyé dans le cadre d''une démonstration des capacités
+  du GC Notification. Vous pouvez supprimer ce message.
+
+
+  [Télécharger le fichier](((file_link)))
+
+
+  Merci,
+
+  Équipe de développement du gouvernement ouvert
+
+  '
 created_at: '2022-07-20T15:26:52.992789Z'
 created_by: ross.thompson@tbs-sct.gc.ca
 id: 1112e88f-089f-4ebb-a5eb-c32a8dc2051a
@@ -19,8 +51,8 @@ personalisation:
   name:
     required: true
 postage: null
-subject: "GC Notify With File Link Demo Message | Message de d\xE9monstration de la\
-  \ notification GC avec un lien de fichier"
+subject: GC Notify With File Link Demo Message | Message de démonstration de la notification
+  GC avec un lien de fichier
 type: email
 updated_at: '2022-07-20T19:57:21.337278Z'
 version: 3

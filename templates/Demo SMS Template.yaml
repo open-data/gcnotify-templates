@@ -1,7 +1,11 @@
-body: "Hello ((name)), this message is sent as part of a demonstration of GC Notify.\
-  \ You may safely disregard and delete this message. | Bonjour ((name)), ce message\
-  \ a \xE9t\xE9 envoy\xE9 dans le cadre d\u2019une d\xE9monstration des capacit\xE9\
-  s du GC Notification. Vous pouvez supprimer ce message."
+body: '
+
+  Hello ((name)), this message is sent as part of a demonstration of GC Notify. You
+  may safely disregard and delete this message. | Bonjour ((name)), ce message a été
+  envoyé dans le cadre d’une démonstration des capacités du GC Notification. Vous
+  pouvez supprimer ce message.
+
+  '
 created_at: '2022-07-19T14:04:28.339002Z'
 created_by: ross.thompson@tbs-sct.gc.ca
 id: 2eee68e1-8f2c-4b02-8522-367eeb47f195

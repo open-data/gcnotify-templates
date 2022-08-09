@@ -1,24 +1,22 @@
-body: "^ # This is a development environment email\r\n\r\n_(Le fran\xE7ais suit)_\r\
-  \n[[en]]\r\nHello ((user_name)),\r\n\r\nThank you for registering with the Open\
-  \ Government Registry. Your account has been successfully created.\r\n\r\nAlthough\
-  \ your account is active, it has not yet been linked to your department. Until the\
-  \ account is linked to your department you will not be able to create or modify\
-  \ datasets in the registry.\r\n\r\nFor information on how to use the Open Government\
-  \ Registry, visit our [GCconnex](https://gcconnex.gc.ca/file/group/24670219/all#33289464)\
-  \ page for information resources.\r\n\r\n\r\nThe Open Government Registry Team\r\
-  \n\r\nGCconnex: https://gcconnex.gc.ca/file/group/24670219/all#33289464\r\n\r\n\r\
-  \n__\r\nMessage sent by Open Government Registry DEV (http://localhost)\r\n[[/en]]\r\
-  \n___\r\n[[fr]]\r\nBonjour ((user_name)),\r\n\r\nMerci de vous \xEAtre inscrit au\
-  \ Registre du gouvernement ouvert. Votre compte a \xE9t\xE9 cr\xE9\xE9 avec succ\xE8\
-  s. \r\n\r\nM\xEAme si votre compte est actif, il n'est pas encore reli\xE9 \xE0\
-  \ votre minist\xE8re. Vous ne pourrez cr\xE9er ou modifier de jeux de donn\xE9es\
-  \ dans le registre tant que votre compte n'aura pas \xE9t\xE9 reli\xE9 \xE0 votre\
-  \ minist\xE8re.\r\n\r\nPour savoir comment utiliser le Registre du gouvernement\
-  \ ouvert, visitez notre page [GCconnex](https://gcconnex.gc.ca/file/group/24670219/all#33289464)\
-  \ pour obtenir des ressources documentaires.\r\n\r\n\r\nL'\xE9quipe de le registre\
-  \ de gouvernement ouvert\r\n\r\nGCconnex: https://gcconnex.gc.ca/file/group/24670219/all#33289464\r\
-  \n\r\n\r\n__\r\nMessage envoy\xE9 par le registre du gouvernement ouvert DEV (http://localhost)\r\
-  \n[[/fr]]"
+body: "\n^ # This is a development environment email\n\n_(Le français suit)_\n[[en]]\n\
+  Hello ((user_name)),\n\nThank you for registering with the Open Government Registry.\
+  \ Your account has been successfully created.\n\nAlthough your account is active,\
+  \ it has not yet been linked to your department. Until the account is linked to\
+  \ your department you will not be able to create or modify datasets in the registry.\n\
+  \nFor information on how to use the Open Government Registry, visit our [GCconnex](https://gcconnex.gc.ca/file/group/24670219/all#33289464)\
+  \ page for information resources.\n\n\nThe Open Government Registry Team\n\nGCconnex:\
+  \ https://gcconnex.gc.ca/file/group/24670219/all#33289464\n\n\n__\nMessage sent\
+  \ by Open Government Registry DEV (http://localhost)\n[[/en]]\n___\n[[fr]]\nBonjour\
+  \ ((user_name)),\n\nMerci de vous être inscrit au Registre du gouvernement ouvert.\
+  \ Votre compte a été créé avec succès. \n\nMême si votre compte est actif, il n'est\
+  \ pas encore relié à votre ministère. Vous ne pourrez créer ou modifier de jeux\
+  \ de données dans le registre tant que votre compte n'aura pas été relié à votre\
+  \ ministère.\n\nPour savoir comment utiliser le Registre du gouvernement ouvert,\
+  \ visitez notre page [GCconnex](https://gcconnex.gc.ca/file/group/24670219/all#33289464)\
+  \ pour obtenir des ressources documentaires.\n\n\nL'équipe de le registre de gouvernement\
+  \ ouvert\n\nGCconnex: https://gcconnex.gc.ca/file/group/24670219/all#33289464\n\n\
+  \n__\nMessage envoyé par le registre du gouvernement ouvert DEV (http://localhost)\n\
+  [[/fr]]\n"
 created_at: '2022-07-29T20:25:59.323387Z'
 created_by: jesse.vickery@tbs-sct.gc.ca
 id: 7c984eda-eb08-4ae2-8d12-0e4e91d51169
@@ -27,8 +25,8 @@ personalisation:
   user_name:
     required: true
 postage: null
-subject: "DEV | New Registry Account Created | Nouveau compte cr\xE9\xE9 dans le registre\
-  \ de gouvernement ouvert"
+subject: DEV | New Registry Account Created | Nouveau compte créé dans le registre
+  de gouvernement ouvert
 type: email
 updated_at: '2022-08-05T14:30:08.874477Z'
 version: 9
