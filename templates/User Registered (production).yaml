@@ -1,0 +1,90 @@
+body: '
+
+  _(Le français suit)_
+
+  [[en]]
+
+  Hello ((admin_name)),
+
+
+  A new account has been created in the Open Government Registry. The account information
+  is as follows:
+
+  **Username:** ((user_name))
+
+  **Email:** ((email_address))
+
+  **Phone:** ((phone_number))
+
+  **Department:** ((department))
+
+
+  To complete the registration, access the registry and link the account to their
+  department.
+
+
+
+  Have a nice day.
+
+
+  __
+
+  Message sent by Open Government Registry (https://registry.open.canada.ca)
+
+  [[/en]]
+
+  ___
+
+  [[fr]]
+
+  Bonjour ((admin_name)),
+
+
+  Un nouveau compte a été créé dans le registre de gouvernement ouvert. Les renseignements
+  concernant le compte sont les suivants :
+
+  **Nom d’utilisateur :** ((user_name))
+
+  **Adresse électronique :** ((email_address))
+
+  **Téléphone :** ((phone_number))
+
+  **Ministère :** ((department))
+
+
+  Pour compléter l’inscription, veuillez accéder au registre et relier le compte à
+  son ministère.
+
+
+
+  Bonne journée.
+
+
+  __
+
+  Message envoyé par le registre du gouvernement ouvert (https://registry.open.canada.ca)
+
+  [[/fr]]
+
+  '
+created_at: '2022-08-09T15:02:09.446584Z'
+created_by: jesse.vickery@tbs-sct.gc.ca
+id: 4b25377f-6fd1-43bc-a833-e27fa41d4063
+name: User Registered (production)
+personalisation:
+  admin_name:
+    required: true
+  department:
+    required: true
+  email_address:
+    required: true
+  phone_number:
+    required: true
+  user_name:
+    required: true
+postage: null
+subject: New Registry Account Created | Nouveau compte créé dans le registre de gouvernement
+  ouvert
+type: email
+updated_at: null
+version: 1
