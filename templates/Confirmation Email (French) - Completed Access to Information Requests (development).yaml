@@ -1,0 +1,36 @@
+body: '
+
+  [[fr]]
+
+  Ceci est un courriel automatisé. Vous le recevez parce que vous avez communiqué
+  avec une organisation au sujet d’une demande d’accès à l’information. Voici les
+  valeurs que vous avez soumises :
+
+
+  --
+
+  **Soumis le :** ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+
+  [[/fr]]
+
+  '
+created_at: '2022-10-20T12:23:34.512561Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: 4abe7928-3321-45cd-a80e-e96bfe7f439e
+name: Confirmation Email (French) - Completed Access to Information Requests (development)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'Soumission informelle de la demande d’AI # ((webform_submission_sid))'
+type: email
+updated_at: '2022-11-21T17:33:33.925275Z'
+version: 5

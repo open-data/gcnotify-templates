@@ -1,0 +1,38 @@
+body: '
+
+  [[fr]]
+
+  ^ #Ceci est un courriel provenant de l''environnement de simulation
+
+
+  Ceci est un courriel automatisé. Vous le recevez parce que vous avez communiqué
+  avec une organisation au sujet d’une demande d’accès à l’information. Voici les
+  valeurs que vous avez soumises :
+
+
+  ---
+
+  Soumis le : ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+  [[/fr]]
+
+  '
+created_at: '2022-10-31T14:11:19.425309Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: ebf0c943-350b-4e83-8952-3a1074fd059e
+name: Confirmation Email (French) - Completed Access to Information Requests (staging)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'STAGING | Soumission informelle de la demande d’AI #  ((webform_submission_sid))'
+type: email
+updated_at: '2022-11-18T15:01:46.825546Z'
+version: 7

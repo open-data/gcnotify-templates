@@ -1,0 +1,34 @@
+body: '
+
+  [[en]]
+
+  This is an automated e-mail. You are receiving this because you contacted an organization
+  about an ATI Request. Here are the values that you submitted:
+
+
+  ---
+
+  **Submitted on**: ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+  [[/en]]
+
+  '
+created_at: '2022-10-19T15:11:41.390879Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: fe0ea5d5-41a4-4e4d-866d-3ddd130bf88b
+name: Confirmation Email (English) - Completed Access to Information Requests (development)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'ATI Informal Request Submission # ((webform_submission_sid))'
+type: email
+updated_at: '2022-11-21T17:32:01.686291Z'
+version: 10
