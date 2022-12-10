@@ -1,0 +1,36 @@
+body: '
+
+  ^ # This is a transactional email
+
+
+  [[en]]
+
+  Followed, is a list of Organizations that are on the [Portal](https://open.canada.ca)
+  but _**not**_ on the [Registry](https://registry.open.canada.ca).
+
+
+  This excludes Organizations which should _**only**_ be on the Portal, such as Provinces
+  (ab, mb, nb, qc, yk).
+
+
+  ((diff))
+
+  __
+
+  Message sent by the Open Government Servers
+
+  [[/en]]
+
+  '
+created_at: '2022-12-09T15:40:07.069709Z'
+created_by: jesse.vickery@tbs-sct.gc.ca
+id: c5699c5f-355b-4ef0-8d57-dbefeeb068d4
+name: Registry and Portal Organization Discrepancy
+personalisation:
+  diff:
+    required: true
+postage: null
+subject: Registry and Portal Organization Discrepancy
+type: email
+updated_at: null
+version: 1
