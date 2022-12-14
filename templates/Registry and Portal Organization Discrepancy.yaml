@@ -10,10 +10,14 @@ body: '
 
 
   This excludes Organizations which should _**only**_ be on the Portal, such as Provinces
-  (ab, mb, nb, qc, yk).
+  (ab, mb, nb, qc, nwt-tno, and yk).
 
 
-  ((diff))
+  **((diff))**
+
+
+  If you do not receive this alert, you can assume that the Organizations on the Registry
+  and Portal are synced correctly.
 
   __
 
@@ -32,5 +36,5 @@ personalisation:
 postage: null
 subject: Registry and Portal Organization Discrepancy
 type: email
-updated_at: null
-version: 1
+updated_at: '2022-12-13T16:14:49.165823Z'
+version: 4
