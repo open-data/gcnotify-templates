@@ -1,6 +1,6 @@
 body: '
 
-  ^ # This is a transactional email
+  ^ # This is a server message
 
 
   [[en]]
@@ -23,10 +23,12 @@ created_by: jesse.vickery@tbs-sct.gc.ca
 id: 5892deb6-4a7d-4239-8567-5001a4dff65f
 name: Server GC Notify Connection Test
 personalisation:
+  displayname:
+    required: true
   hostname:
     required: true
 postage: null
-subject: ((hostname)) | GC Notify Test
+subject: ((displayname)) | GC Notify Test
 type: email
-updated_at: null
-version: 1
+updated_at: '2023-01-17T19:42:17.233406Z'
+version: 5
