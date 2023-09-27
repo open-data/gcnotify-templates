@@ -1,0 +1,38 @@
+body: '
+
+  [[en]]
+
+  ^ # This is a staging server email
+
+
+  This is an automated e-mail. The following feedback has been received on the Open
+  Government Portal.
+
+
+  ---
+
+  **Submitted on**: ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+  [[/en]]
+
+  '
+created_at: '2023-05-18T10:13:18.543009Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: dd8eb16d-925d-48d5-b954-55fbcfd96b37
+name: Confirmation Email (English) - Dataset Feedback (staging)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'STAGING |  New feedback # ((webform_submission_sid)) received from portal
+  visitor'
+type: email
+updated_at: '2023-06-05T16:13:03.513931Z'
+version: 3

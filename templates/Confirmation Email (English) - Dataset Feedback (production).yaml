@@ -1,0 +1,35 @@
+body: '
+
+  [[en]]
+
+
+  This is an automated e-mail. The following feedback has been received on the Open
+  Government Portal.
+
+
+  ---
+
+  **Submitted on**: ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+  [[/en]]
+
+  '
+created_at: '2023-06-12T20:06:35.500298Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: bfa4b0b0-955c-46cc-b418-8621f8378fb1
+name: Confirmation Email (English) - Dataset Feedback (production)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'New feedback # ((webform_submission_sid)) received from portal visitor'
+type: email
+updated_at: '2023-06-12T20:11:17.399617Z'
+version: 2

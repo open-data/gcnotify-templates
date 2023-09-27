@@ -1,0 +1,38 @@
+body: '
+
+  [[fr]]
+
+  ^ #Ceci est un courriel provenant de l''environnement de simulation
+
+
+  Ceci est un courriel automatisé. La rétroaction suivante a été reçue sur le Portail
+  du gouvernement ouvert.
+
+
+  ---
+
+  Soumis le : ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+  [[/fr]]
+
+  '
+created_at: '2023-05-18T10:14:25.370083Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: 50bf4fad-37ef-4bd0-8d47-4f71493b867f
+name: Confirmation Email (French) - Dataset Feedback (staging)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'STAGING | Nouvelle rétroaction # ((webform_submission_sid)) reçue de la
+  part d’un visiteur du Portail'
+type: email
+updated_at: '2023-06-05T16:22:14.720261Z'
+version: 3

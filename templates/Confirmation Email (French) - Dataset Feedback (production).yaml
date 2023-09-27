@@ -1,0 +1,36 @@
+body: '
+
+  [[fr]]
+
+
+  Ceci est un courriel automatisé. La rétroaction suivante a été reçue sur le Portail
+  du gouvernement ouvert.
+
+
+  ---
+
+  Soumis le : ((webform_submission_created))
+
+
+  ((webform_submission_values))
+
+  [[/fr]]
+
+  '
+created_at: '2023-06-12T20:07:15.203131Z'
+created_by: rabia.sajjad@tbs-sct.gc.ca
+id: b7d02657-4154-426b-b646-8e99b6423f90
+name: Confirmation Email (French) - Dataset Feedback (production)
+personalisation:
+  webform_submission_created:
+    required: true
+  webform_submission_sid:
+    required: true
+  webform_submission_values:
+    required: true
+postage: null
+subject: 'Nouvelle rétroaction # ((webform_submission_sid)) reçue de la part d’un
+  visiteur du Portail'
+type: email
+updated_at: '2023-06-12T20:12:51.745507Z'
+version: 2
