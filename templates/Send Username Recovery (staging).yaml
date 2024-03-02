@@ -1,0 +1,20 @@
+body: "\n^ # This is a staging server email\n\n_(Le français suit)_\n[[en]]\nHello,\n\
+  \nYou have requested your username(s) on Open Government Registry to be recovered.\
+  \ Below are the username(s) associated with your email: \n\n**((username_list))**\n\
+  \nHave a nice day.\n\n__\nMessage sent by Open Government Registry STAGING (https://registry-staging.open.canada.ca)\n\
+  [[/en]]\n___\n[[fr]]\nBonjour,\n\nFRFRFR :\n\n**((username_list))**\n\nBonne journée.\n\
+  \n__\nMessage envoyé par le registre du gouvernement ouvert STAGING (https://registry-staging.open.canada.ca)\n\
+  [[/fr]]\n"
+created_at: '2024-03-01T20:06:38.696179Z'
+created_by: jesse.vickery@tbs-sct.gc.ca
+id: a76847cc-6a82-4860-93cc-ed8d2233d461
+name: Send Username Recovery (staging)
+personalisation:
+  username_list:
+    required: true
+postage: null
+subject: STAGING | Recover your username - Open Government Registry | FRFRFR - Le
+  registre du gouvernement ouvert
+type: email
+updated_at: null
+version: 1
