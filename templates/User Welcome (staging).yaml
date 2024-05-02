@@ -1,22 +1,95 @@
-body: "\n^ # This is a staging server email\n\n_(Le français suit)_\n[[en]]\nHello\
-  \ ((user_name)),\n\nThank you for registering with the Open Government Registry.\
-  \ Your account has been successfully created.\n\nAlthough your account is active,\
-  \ it has not yet been linked to your department. Until the account is linked to\
-  \ your department you will not be able to create or modify datasets in the registry.\n\
-  \nFor information on how to use the Open Government Registry, visit our [GCconnex](https://gcconnex.gc.ca/file/group/24670219/all#33289464)\
-  \ page for information resources.\n\n\nThe Open Government Registry Team\n\nGCconnex:\
-  \ https://gcconnex.gc.ca/file/group/24670219/all#33289464\n\n\n__\nMessage sent\
-  \ by Open Government Registry STAGING (https://registry-staging.open.canada.ca)\n\
-  [[/en]]\n___\n[[fr]]\nBonjour ((user_name)),\n\nMerci de vous être inscrit au Registre\
-  \ du gouvernement ouvert. Votre compte a été créé avec succès. \n\nMême si votre\
-  \ compte est actif, il n'est pas encore relié à votre ministère. Vous ne pourrez\
-  \ créer ou modifier de jeux de données dans le registre tant que votre compte n'aura\
-  \ pas été relié à votre ministère.\n\nPour savoir comment utiliser le Registre du\
-  \ gouvernement ouvert, visitez notre page [GCconnex](https://gcconnex.gc.ca/file/group/24670219/all#33289464)\
-  \ pour obtenir des ressources documentaires.\n\n\nL'équipe de le registre de gouvernement\
-  \ ouvert\n\nGCconnex: https://gcconnex.gc.ca/file/group/24670219/all#33289464\n\n\
-  \n__\nMessage envoyé par le registre du gouvernement ouvert STAGING (https://registry-staging.open.canada.ca)\n\
-  [[/fr]]\n"
+body: '
+
+  ^ # This is a staging server email
+
+
+  _(Le français suit)_
+
+  [[en]]
+
+  Hello ((user_name)),
+
+
+  Your Open Government Registry account has now been created. It may take up to 48
+  hours for your account to be linked to your organization. Please note the process
+  may take longer if your institution requires prior approval.
+
+
+  After your account has been successfully linked to your institution, you will receive
+  a second email. You will then be able to publish your records.
+
+
+  You can access the registry from the [Login](https://registry.open.canada.ca/en/user/login)
+  page of the Open Government Registry.
+
+
+  For information about how to release a record or proactive publication on the registry,
+  visit [Registry operations guide: Your account](https://open.canada.ca/en/registry-operations-guide/your-account).
+
+
+  For information on proactive publication requirements or access to information request
+  processing, visit the [Access to Information](https://www.gcpedia.gc.ca/wiki/ATI/PP)
+  page of the ATIP Community Resources site.
+
+
+
+  Thank you and don’t hesitate to contact us if you have any questions.
+
+
+  Open Government Portal
+
+
+
+  __
+
+  Message sent by Open Government Registry STAGING (https://registry-staging.open.canada.ca)
+
+  [[/en]]
+
+  ___
+
+  [[fr]]
+
+  Bonjour ((user_name)),
+
+
+  Votre compte du Registre du gouvernement ouvert a été créé. D’ici 48 heures, il
+  devrait être relié à votre organisation. Veuillez noter que si celle-ci requiert
+  une autorisation, cela pourrait prendre plus de temps.
+
+
+  Une fois votre compte relié à votre institution, vous recevrez un second courriel.
+  Vous pourrez par la suite publier vos documents.
+
+
+  Vous pouvez accéder au Registre du gouvernement ouvert à partir de la page [Se connecter](https://registry.open.canada.ca/fr/user/login).
+
+
+  Pour savoir comment téléverser un document ou une publication proactive sur le registre,
+  veuillez consulter le [Guide des opérations de registre : Ton compte](https://ouvert.canada.ca/fr/guide-operations-registre/ton-compte).
+
+
+  Pour obtenir de l’information sur les exigences relatives à la publication proactive
+  ou le traitement des demandes d’accès à l’information, veuillez consulter la page
+  [Accès à l’information](https://www.gcpedia.gc.ca/wiki/AI/PP) du site Ressources
+  pour la collectivité de l’AIPRP.
+
+
+
+  N’hésitez pas à communiquer avec nous si vous avez des questions, merci.
+
+
+  Portail du gouvernement ouvert
+
+
+
+  __
+
+  Message envoyé par le registre du gouvernement ouvert STAGING (https://registry-staging.open.canada.ca)
+
+  [[/fr]]
+
+  '
 created_at: '2022-08-02T16:17:23.940387Z'
 created_by: jesse.vickery@tbs-sct.gc.ca
 id: 55048fc8-19a3-43c3-8b81-077b29254b42
@@ -28,5 +101,5 @@ postage: null
 subject: STAGING | New Registry Account Created | Nouveau compte créé dans le registre
   de gouvernement ouvert
 type: email
-updated_at: '2022-08-05T14:28:40.557355Z'
-version: 5
+updated_at: '2024-05-01T12:59:01.419243Z'
+version: 6
